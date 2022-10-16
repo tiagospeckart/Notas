@@ -1,8 +1,10 @@
 #nota_permanente #git #github
 
-**Resumo** com ==Capitalização== e ==Breve== (no Máximo, 50 Caracteres)
+# Introdução
 
-**Texto explicativo** mais detalhado, se necessário. Deixe-o com, cerca de 72
+O **Resumo** deve ser feito com ==Capitalização== e ser ==Breve== (no Máximo, 50 Caracteres)
+
+Já o **texto explicativo** deve ser mais detalhado, se necessário. Deixe-o com, cerca de 72
 caracteres. Em alguns contextos, a primeira linha é tratada como o assunto de um e-mail e o resto do text como o corpo. A linha em branco separando o resumo do corpo é fundamental (a menos que você não escreva uma descrição detalhada); ferramentas como o rebase podem se confundir se você executar ambas em conjunto.
 
 Escreva sua mensagem de commit no imperativo: "Consertar o bug" em vez de "Bug consertado" ou "Conserta o bug". Esta convenção corresponde às mensagens de commit geradas por comandos como o git merge e o git revert.
