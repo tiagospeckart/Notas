@@ -1,7 +1,7 @@
 #git 
 
 Ver [[Git]]
-cxcxczxc
+
 # Criar
 #### Clone um repositório existente
 ```bash
