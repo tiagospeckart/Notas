@@ -7,7 +7,7 @@ Aqui você encontrará anotações que venho fazendo desde que passei a me organ
 Muito conteúdo que tenho acesso é em português e inglês, muito conteúdo será traduzido, portanto creio se importante falar um pouco sobre isso. Como não sei as convenções de tradução em jargão *tecnobabble*, alguns termos podem ter ficado estranhos, como **Crie um novo galho baseado na sua CABEÇA atual** no arquivo [colinha git](https://github.com/tiagospeckart/Notas/blob/main/Git%20colinha.md), mas eu acho engraçado (¯▿¯)
 
 # Arquivos disponíveis
-## Boas práticas em commits
+## [Boas práticas em commits](https://github.com/tiagospeckart/Notas/blob/main/Boas%20pr%C3%A1ticas%20em%20commits.md)
 Comunicação clara é essencial para o trabalho em equipe, por isso saber a melhor forma de comunicar o seu trabalho realizado é essencial para o sucesso de qualquer empreendimento em time.
 
 ## [gitignore](https://github.com/tiagospeckart/Notas/blob/main/Git%20ignore.md)
