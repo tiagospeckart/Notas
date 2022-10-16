@@ -1,0 +1,17 @@
+{
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "spellcheckLanguages": [
+    "pt-BR",
+    "en-US"
+  ],
+  "spellcheck": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "New Notes"
+}

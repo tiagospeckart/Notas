@@ -1,0 +1,10 @@
+@media print {
+  a::after{
+    content: " (" attr(href) ") ";
+  }
+  span {
+    color: black;
+  }
+}
+
+@media print{.internal-embed{margin-left:-30px;}} */

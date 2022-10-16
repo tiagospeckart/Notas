@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "cssTheme": "Obsidian Nord",
+  "enabledCssSnippets": [
+    "a",
+    "show_links",
+    "darkmode",
+    "pdf_export",
+    "mermaid"
+  ]
+}
