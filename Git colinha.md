@@ -196,4 +196,3 @@ $ git reset <commit>
 $ git reset --keep <commit>
 ```
 
-
