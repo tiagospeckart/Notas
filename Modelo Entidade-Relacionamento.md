@@ -16,7 +16,7 @@ alias: Entity–relationship model, ERM
 
 ## Definição
 Um Modelo Entidade-Relacionamento descreve coisas interrrelacionadas em um domínio do [[conhecimento]]. Um modelo básico ER é composto de *Entidades* e especifica as *Relações* que podem existir entre as entidades.
-Em engenharia de software, um modelo ER é geralmente utilizado para representar coisas que uma empresa precisa memorizar para gerenciar [[Processo de Negócio]]. Consequentemente, o modelo ER se torna um [[Modelagem de dados|modelo de dados]] abstrato, que define o [[dado]] ou estrutura de informação que pode ser implementado em um [[Banco de Dados]], tipicamente um [[Banco de Dados Relacional]].
+Em engenharia de software, um modelo ER é geralmente utilizado para representar coisas que uma empresa precisa memorizar para gerenciar [[Processo de Negócio]]. Consequentemente, o modelo ER se torna um [[Modelagem de dados|modelo de dados]] abstrato, que define o [[dado]] ou estrutura de informação que pode ser implementado em um [[Banco de dado]], tipicamente um [[Banco de Dados Relacional]].
 
 ## Criado por
 Chen, Peter (March 1976). "The Entity-Relationship Model - Toward a Unified View of Data". _ACM Transactions on Database Systems_. **1** (1): 9–36.
