@@ -1,198 +1,149 @@
-#git 
+---
+title: Git
+created: 2022-010-28
+aliases: 
+tags: [git, github]
+note_status: finished
+publish: true
+---
 
-Ver [[Git]]
+# Configuração do Repositório
 
-# Criar
-#### Clone um repositório existente
 ```bash
-$ git clone ssh:user@domain.com.repo.git
-```
+# Clone um repositório existente 
+$ git clone ssh:user@domain.com.repo.git  
 
-#### Clone um repositório existente
-```bash
+# Inicie um novo repositório 
 $ git init
 ```
 
-# Mudanças locais
-#### Arquivos alterados em seu diretório atual
-```bash
-$ git status
-```
-
-#### Mudanças no arquivo rastreado
-```bash
-$ git diff
-```
-
-#### Adicione todas mudanças atuais ao próximo commit
-```bash
-$ git add .
-```
-
-#### Adicione algumas mudanças no `<arquivo>` para o próximo commit
+# Trabalhando com Mudanças Locais
 
 ```bash
-$ git add -p <arquivo>
-```
+# Verifique arquivos alterados em seu diretório atual 
+$ git status  
 
-#### Commite todas as mudanças locais nos arquivos rastreados
-```bash
-$ git commit -a
-```
+# Veja as mudanças nos arquivos rastreados 
+$ git diff  
 
-#### Commite mudanças anteriormente colocadas em stage
-```bash
-$ git commit
-```
+# Adicione todas mudanças atuais para o próximo commit 
+$ git add .  
 
-#### Mude o último commit
-###### *Não complemente commits publicados!*
-```bash
+# Adicione algumas mudanças no `<arquivo>` para o próximo commit 
+$ git add -p <arquivo>  
+
+# Faça o commit de todas as mudanças locais nos arquivos rastreados 
+$ git commit -a  
+
+# Faça o commit de mudanças anteriormente colocadas em stage 
+$ git commit  
+
+# Altere o último commit 
+# Não altere commits publicados! 
 $ git commit --amend
 ```
 
-# História de commits
-#### Mostrar todos commits, começando do mais novo
-```bash
-$ git log
-```
+# Trabalhando com a História do Commit
 
-#### Mostrar mudanças ao longo do tempo de um arquivo em específico
 ```bash
-$ git log -p <arquivo>
-```
+# Mostra todos commits, começando pelo mais recente 
+$ git log  
 
-#### Quem mudou o quê e quando no `<arquivo>`
-```bash
+# Mostra as mudanças ao longo do tempo para um arquivo específico 
+
+$ git log -p <arquivo>  
+
+# Veja quem alterou o quê e quando no `<arquivo>` 
 $ git blame <arquivo>
 ```
 
-# Galhos e tags
-#### Liste todos os galhos existentes
-```bash
-$ git branch -av
-```
+# Trabalhando com Branches e Tags
 
-#### Mudar o galho CABEÇA
 ```bash
-$ git checkout <galho>
-```
+# Liste todos os branches existentes 
+$ git branch -av 
 
-#### Crie um novo galho baseado na sua CABEÇA atual
-```bash
-$ git branch <novo-galho>
-```
+# Mude o branch HEAD 
+$ git checkout <branch>  
 
-#### Crie um novo galho de rastreio baseado em um galho remoto 
-```bash
-$ git checkout --track <remoto/galho>
-```
+# Crie um novo branch baseado na sua HEAD atual 
+$ git branch <novo-branch>  
 
-#### Delete um galho local
-```bash
-$ git branch -d <galho>
-```
+# Crie um novo branch de rastreamento baseado em um branch remoto 
+$ git checkout --track <remoto/branch>  
 
-#### Marque o commit atual com uma bandeira
-```bash
+# Delete um branch local 
+$ git branch -d <branch>  
+
+# Marque o commit atual com uma tag 
 $ git tag <tag-name>
 ```
 
-# Update and publicar
-#### Liste todos os remotos presentemente configurados
-```bash
-$ git remote -v
-```
+# Atualizar e Publicar
 
-#### Mostrar informação sobre remoto
 ```bash
-$ git remote show <remoto>
-```
+# Liste todos os remotos atualmente configurados 
+$ git remote -v  
 
-#### Adicione novo repositório remoto, chamado `<remoto>
-```bash
-$ git remote add <nomecurto> <url>
-```
+# Mostre informações sobre o remoto 
+$ git remote show <remoto>  
 
-#### Baixe as mudanças e diretamente fundir/integrar em CABEÇA
-```bash
-$ git pull <remoto> <galho>
-```
+# Adicione um novo repositório remoto, chamado `<nomecurto>` 
+$ git remote add <nomecurto> <url>  
 
-#### Publique mudanças locais em um remoto
-```bash
-$ git push <remoto> <galho>
-```
+# Baixe as mudanças e as funda/integre diretamente na HEAD 
+$ git pull <remoto> <branch>  
 
-#### Delete um galho no remoto
-```bash
-$ git branch -dr <remote/galho>
-```
+# Publique mudanças locais em um remoto 
+$ git push <remoto> <branch>  
 
-#### Publique suas tags
-```bash
+# Delete um branch no remoto 
+$ git branch -dr <remote/branch>  
+
+# Publique suas tags 
 $ git push --tags
 ```
 
-# Merge & rebase
-#### Funda `<galho>` em sua CABEÇA atual
-```bash
-$ git merge <galho>
-```
+# Merge e Rebase
 
-#### Rebaseie sua atual CABEÇA no `<galho>`
-###### *Nãp rebaseie commits publicados!*
 ```bash
-$ git rebase <galho>
-```
+# Funda `<branch>` na sua HEAD atual 
+$ git merge <branch>  
 
-#### Aborte rebase
-```bash
-$ git rebase --abort
-```
+# Faça rebase da sua atual HEAD no `<branch>` 
+# Não faça rebase de commits publicados! 
+$ git rebase <branch>  
 
-#### Continue uma rebase depois de resolver conflitos
-```bash
-$ git rebase --continue
-```
+# Aborta rebase $ git rebase --abort  
+# Continue um rebase após resolver conflitos 
+$ git rebase --continue  
 
-#### Use sua ferramenta de fusão configurada para para resolver conflitos
-```bash
-$ git mergetool
-```
+# Use sua ferramenta de fusão configurada para resolver conflitos 
+$ git mergetool  
 
-#### Use seu editor para manualmente solucionar conflitos e (após resolver) marcar arquivo como resolvido
-```bash
-$ git add <resolved-arquivo>
+# Use seu editor para resolver conflitos manualmente e (após resolver) marque o arquivo como resolvido 
+$ git add <resolved-arquivo> 
 $ git rm <resolved-arquivo>
 ```
 
-# Refazer
-#### Descartar todas as mudanças locais em seu diretório atual. 
+# Refazer e Reverter Mudanças
+
 ```bash
+# Descarte todas as mudanças locais em seu diretório atual
 $ git reset --hard HEAD
-```
-#### Descarte mudanças locais em um arquivo específico
-```bash
+
+# Descarte mudanças locais em um arquivo específico
 $ git checkout HEAD <arquivo>
-```
 
-#### Reverta um commit (produzindo um novo commit com mudanças contrárias)
-```bash
+# Reverta um commit (produzindo um novo commit com mudanças contrárias)
 $ git revert <commit>
-```
 
-#### Resete o [[ponteiro]] de sua cabeça CABEÇA para um commit anterior
-##### ...e descarte todas as mudanças desde então
-```bash
+# Resete a HEAD para um commit anterior
+## Descarte todas as mudanças desde então
 $ git reset --hard <commit>
-```
-##### ...e preserve todas as mudanças como mudanças ainda não postas em stage
-```bash
+## Preserve todas as mudanças como mudanças ainda não postas em stage
 $ git reset <commit>
-```
-##### ...e preserve mudanças locais não commitadas
-```bash
+## Preserve mudanças locais não commitadas
 $ git reset --keep <commit>
 ```
 
