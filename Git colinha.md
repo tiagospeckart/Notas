@@ -1,5 +1,5 @@
 ---
-title: Git
+title: Git colinha
 created: 2022-010-28
 aliases: 
 tags: [git, github]
